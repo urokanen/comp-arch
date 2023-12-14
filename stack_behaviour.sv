@@ -29,26 +29,18 @@ module stack_behaviour_normal(io_data, reset, clk, command, index);
                 end
                 ind2 += 1;
                 ind += 1;
-                if (ind == 5) begin
-                    ind = 0;
-                end
-                if (ind2 == 5) begin
-                    ind2 = 0;
-                end
+                ind %= 5;
+                ind2 %= 5;
             end else if (command == 2'b10) begin
                 rw = 1;
                 res = mas[ind2];
                 ind2 -= 1;
                 ind -= 1;
-                if (ind == 7) begin
-                    ind = 4;
-                end
-                if (ind2 == 7) begin
-                    ind2 = 4;
-                end
+                ind %= 5;
+                ind2 %= 5;
             end else if (command == 2'b11) begin
                 rw = 1;
-                get = ind2 - index;
+                get = ind2 - (index % 5);
                 if (get > 4) begin
                     get = get + 5;
                 end
