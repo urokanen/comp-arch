@@ -16,12 +16,15 @@ I implemented a 5-cell stack that had wires: RESET, CLK, INDEX - the cell index 
 
 ## Implementation of the memory cache
 Implementation and simulation of cache memory operation together with RAM. Using the matrix multiplication program as an example, this program counted the number of cache hits with the specified system parameters:
--ADDR_LEN = 19 bit
--CACHE_WAY = 4 
--CACHE_IDX_LEN = 4 bit
--CACHE_OFFSET_LEN = 5 bit
--CACHE_SIZE = 2 kilobytes
--CACHE_SETS_COUNT = 16
+```
+ADDR_LEN = 19 bit
+CACHE_WAY = 4 
+CACHE_IDX_LEN = 4 bit
+CACHE_OFFSET_LEN = 5 bit
+CACHE_SIZE = 2 kilobytes
+CACHE_SETS_COUNT = 16
+```
+And here is the result of my program:
 ```
 LRU:	hit perc. 96.6571%	time: 4135335
 pLRU:	hit perc. 96.6406%	time: 4140297
