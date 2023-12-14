@@ -12,7 +12,7 @@ h 2 0x4145 * 0x42eb -> 0x1.23cp+3
 f 2 0xff800000 / 0x7f800000 -> nan
 ```
 ## Stack implementation in logisim and verilog
-I implemented a 5-cell stack that had wires: RESET, CLK, INDEX - the cell index from the top of the stack, COMMAND - (01 - add, 10 - pop, 11 - get) DATA(input/output).
+I implemented a 5-cell stack that had wires: RESET, CLK, INDEX - the cell index from the top of the stack, COMMAND - (01 - add, 10 - pop, 11 - get), DATA(input/output). 
 
 ## Implementation of the memory cache
 Implementation and simulation of cache memory operation together with RAM. Using the matrix multiplication program as an example, this program counted the number of cache hits with the specified system parameters:
