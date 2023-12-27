@@ -30,8 +30,8 @@ LRU:	hit perc. 96.6571%	time: 4135335
 pLRU:	hit perc. 96.6406%	time: 4140297
 ```
 ## Disassembler for risk-v commands
-This program accepts an elf file, and decodes the .symtab section in it, as well as the .text section. In this section, my program decodes the risk-v r32 and rv32m commands
-here is an example of how the elf_test file is decoded:
+This program accepts an elf file, and decodes the .symtab section in it, as well as the .text section. In this section, my program decodes the risk-v r32 and rv32m commands.
+Here is an example of how the elf_test file is decoded:
 ```
 .text
 
